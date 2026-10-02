@@ -123,10 +123,3 @@ GET /api/v1/materias/:id/eventos
   → sendSuccess: { success: true, data: eventos }
 ```
 
-## Verificación
-
-- Materia del usuario con eventos: HTTP 200 y la lista de eventos.
-- Materia del usuario sin eventos: HTTP 200 con `data: []`.
-- Materia inexistente o de otro usuario: HTTP 404.
-- Id inválido: HTTP 400.
-- Los campos usan alias: `materiaId`, `horaInicio`, `horaFin`, `createdAt`, `updatedAt`.
