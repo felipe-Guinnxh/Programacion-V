@@ -65,7 +65,7 @@ async function listarRecordatorios() {
           recordatorio.tareaTitulo,
           recordatorio.materiaNombre,
           recordatorio.mensaje,
-          recordatorio.fechaHora,
+          new Date(recordatorio.fechaHora).toLocaleString("es-CO"),
           recordatorio.canal,
           recordatorio.leido ? "Leído" : "No leído"
         ];
