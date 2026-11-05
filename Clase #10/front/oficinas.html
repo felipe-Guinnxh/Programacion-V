@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado - Oficinas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-table="oficinas">
+    <header>
+        <h1>Sistema de Gestión — Base de Datos Proyectos</h1>
+        <p class="subtitulo">Listado de Oficinas</p>
+    </header>
+
+    <nav class="tabs-container">
+        <a href="index.html" class="tab-btn">Inicio / Pestañas</a>
+        <a href="ciudades.html" class="tab-btn">Ciudades</a>
+        <a href="clientes.html" class="tab-btn">Clientes</a>
+        <a href="oficinas.html" class="tab-btn active">Oficinas</a>
+        <a href="proyectos.html" class="tab-btn">Proyectos</a>
+    </nav>
+
+    <div class="table-wrapper">
+        <div class="table-header-info">
+            <span class="table-title" id="titulo-tabla">Listado de Oficinas</span>
+            <span class="record-count" id="contador-registros">Cargando...</span>
+        </div>
+        <table>
+            <thead id="encabezado">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre de la Oficina</th>
+                </tr>
+            </thead>
+            <tbody id="resultado">
+                <tr>
+                    <td colspan="2" class="loading">Cargando datos...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

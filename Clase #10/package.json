@@ -1,0 +1,11 @@
+{
+  "name": "clase-10-proyectos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix bakend start",
+    "dev": "npm --prefix bakend run dev",
+    "check": "npm --prefix bakend run check",
+    "test": "npm --prefix bakend test"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado - Ciudades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-table="ciudades">
+    <header>
+        <h1>Sistema de Gestión — Base de Datos Proyectos</h1>
+        <p class="subtitulo">Listado de Ciudades</p>
+    </header>
+
+    <nav class="tabs-container">
+        <a href="index.html" class="tab-btn active">Inicio / Pestañas</a>
+        <a href="ciudades.html" class="tab-btn active">Ciudades</a>
+        <a href="clientes.html" class="tab-btn">Clientes</a>
+        <a href="oficinas.html" class="tab-btn">Oficinas</a>
+        <a href="proyectos.html" class="tab-btn">Proyectos</a>
+    </nav>
+
+    <div class="table-wrapper">
+        <div class="table-header-info">
+            <span class="table-title" id="titulo-tabla">Listado de Ciudades</span>
+            <span class="record-count" id="contador-registros">Cargando...</span>
+        </div>
+        <table>
+            <thead id="encabezado">
+                <tr>
+                    <th>Id</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                </tr>
+            </thead>
+            <tbody id="resultado">
+                <tr>
+                    <td colspan="3" class="loading">Cargando datos...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos Proyectos - Listados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-table="ciudades">
+    <header>
+        <h1>Sistema de Gestión — Base de Datos Proyectos</h1>
+        <p class="subtitulo">Listados de las tablas trabajadas en clase mediante consumo de API REST</p>
+    </header>
+
+    <!-- Pestañas interactivas para alternar tablas sin recargar -->
+    <nav class="tabs-container">
+        <button class="tab-btn active" id="btn-ciudades" onclick="cambiarTabla('ciudades')">Ciudades</button>
+        <button class="tab-btn" id="btn-clientes" onclick="cambiarTabla('clientes')">Clientes</button>
+        <button class="tab-btn" id="btn-oficinas" onclick="cambiarTabla('oficinas')">Oficinas</button>
+        <button class="tab-btn" id="btn-proyectos" onclick="cambiarTabla('proyectos')">Proyectos</button>
+    </nav>
+
+    <!-- Contenedor con la tabla dinámica -->
+    <div class="table-wrapper">
+        <div class="table-header-info">
+            <span class="table-title" id="titulo-tabla">Listado de Ciudades</span>
+            <span class="record-count" id="contador-registros">Cargando...</span>
+        </div>
+        <table>
+            <thead id="encabezado">
+                <tr>
+                    <th>Id</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                </tr>
+            </thead>
+            <tbody id="resultado">
+                <tr>
+                    <td colspan="3" class="loading">Cargando datos desde la API...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Script con las funciones dsp_ciudades, dsp_clientes, dsp_oficinas, dsp_proyectos -->
+    <script src="app.js"></script>
+</body>
+</html>
