@@ -1,0 +1,22 @@
+{
+  "name": "proyectos-ciudades-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API REST para administrar la tabla ciudades de la base proyectos",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "check": "node scripts/check-syntax.js",
+    "test": "node --test --test-concurrency=1 test/ciudades.integration.test.js test/recursos.integration.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}

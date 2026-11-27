@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de proyectos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main class="card" aria-labelledby="table-title">
+        <header class="card-header">
+            <h1 id="table-title" class="table-title">Información de Ciudades</h1>
+        </header>
+        <div class="card-body">
+            <nav class="resource-tabs" aria-label="Administrar registros">
+                <button type="button" data-resource="ciudades" aria-pressed="true">Ciudades</button>
+                <button type="button" data-resource="clientes" aria-pressed="false">Clientes</button>
+                <button type="button" data-resource="oficinas" aria-pressed="false">Oficinas</button>
+            </nav>
+            <div class="toolbar">
+                <button id="add-record-button" class="primary-button" type="button">Adicionar</button>
+            </div>
+            <div class="table-container" role="region" aria-label="Registros" tabindex="0">
+                <table>
+                    <thead>
+                        <tr id="table-head"></tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+            <div class="table-footer"></div>
+        </div>
+    </main>
+    <formulario-ciudad id="city-form"></formulario-ciudad>
+    <formulario-recurso id="resource-form"></formulario-recurso>
+    <script src="./componentes/formulario-ciudad.js"></script>
+    <script src="./componentes/formulario-recurso.js"></script>
+    <script src="./table.js"></script>
+</body>
+</html>

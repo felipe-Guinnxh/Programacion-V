@@ -1,0 +1,39 @@
+[
+  [1,1,"Algoritmos","ALG-101","#63C66D", 4, true],
+  {
+    "id": 2,
+    "usuarioId": 1,
+    "nombre": "Inteligencia Artificial",
+    "codigo": "IA-202",
+    "color": "#74A7F7",
+    "creditos": 3,
+    "activa": true
+  },
+  {
+    "id": 3,
+    "usuarioId": 1,
+    "nombre": "Bases de Datos",
+    "codigo": "BD-203",
+    "color": "#A689F5",
+    "creditos": 3,
+    "activa": true
+  },
+  {
+    "id": 4,
+    "usuarioId": 1,
+    "nombre": "Desarrollo Web",
+    "codigo": "WEB-204",
+    "color": "#FFA33A",
+    "creditos": 4,
+    "activa": true
+  },
+  {
+    "id": 5,
+    "usuarioId": 1,
+    "nombre": "Matematicas Discretas",
+    "codigo": "MAT-205",
+    "color": "#F5629D",
+    "creditos": 3,
+    "activa": true
+  }
+]
